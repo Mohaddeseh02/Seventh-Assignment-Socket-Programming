@@ -29,7 +29,7 @@ public class FileHandler implements Runnable {
     }
 
     private void sendFileList() throws IOException {
-        File dir = new File("D:\\Java\\7th Assignment\\Seventh-Assignment-Socket-Programming-Develop\\seventh_assignment\\src\\main\\java\\sbu\\cs\\Server\\data");
+        File dir = new File("C:\\Users\\hp\\Desktop\\AP\\Seventh-Assignment-Socket-Programming\\seventh_assignment\\src\\main\\java\\sbu\\cs\\Server\\data");
         File[] files = dir.listFiles((d, name) -> name.endsWith(".txt"));
 
         if (files == null) {
@@ -44,7 +44,7 @@ public class FileHandler implements Runnable {
     }
 
     private void sendFile(int fileIndex) throws IOException {
-        File dir = new File("D:\\Java\\7th Assignment\\Seventh-Assignment-Socket-Programming-Develop\\seventh_assignment\\src\\main\\java\\sbu\\cs\\Server\\data");
+        File dir = new File("C:\\Users\\hp\\Desktop\\AP\\Seventh-Assignment-Socket-Programming\\seventh_assignment\\src\\main\\java\\sbu\\cs\\Server\\data");
         File[] files = dir.listFiles((d, name) -> name.endsWith(".txt"));
 
         if (files == null || fileIndex < 0 || fileIndex >= files.length) {

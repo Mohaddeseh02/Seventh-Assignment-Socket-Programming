@@ -83,7 +83,7 @@ public class Client {
             long size = reader.readLong();
             System.out.println("Received file size: " + size);
 
-            File dir = new File("D:\\Java\\7th Assignment\\Seventh-Assignment-Socket-Programming-Develop\\seventh_assignment\\src\\main\\java\\sbu\\cs\\Client\\data" + fileName);
+            File dir = new File("C:\\Users\\hp\\Desktop\\AP\\Seventh-Assignment-Socket-Programming\\seventh_assignment\\src\\main\\java\\sbu\\cs\\Server\\data" + fileName);
             if (!dir.exists()) {
                 dir.mkdirs();
             }
@@ -98,11 +98,16 @@ public class Client {
             }
             fileOutputStream.close();
             System.out.println("File " + fileName + " downloaded successfully.");
+//            while (true){
+//                if(fileName.equals("/menu")){
+//                    break;
+//                }
+//            }
         } catch (IOException e) {
             System.err.println("Error receiving file: " + e.getMessage());
         }
-        Scanner scanner = new Scanner (System.in);
-        scanner.nextLine ();
+//        Scanner scanner = new Scanner (System.in);
+//        scanner.nextLine ();
     }
 
 }
